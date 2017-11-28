@@ -1,0 +1,100 @@
+.arial {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: white;
+}
+.arial-span {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: #a1ff9e;
+}
+header {
+  height: 74px;
+  background: url("../img/header.png");
+  background-size: cover;
+  line-height: 74px;
+}
+header .header-wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+header .header-wrapper .logo {
+  float: left;
+  margin: 10px;
+}
+header .header-wrapper .support {
+  float: right;
+  margin: 5px;
+  background: url("../img/call-button.png");
+  border: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  background-size: cover;
+  padding: 5px;
+  width: 103px;
+  height: 60px;
+}
+header .header-wrapper .support img {
+  float: left;
+}
+header .header-wrapper .support:focus {
+  outline: 0;
+}
+header .header-wrapper .support:hover {
+  font-size: 16px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+header .header-wrapper .support:active {
+  font-size: 16px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(4px);
+}
+header .header-wrapper nav {
+  float: right;
+}
+header .header-wrapper nav ul li {
+  height: 74px;
+  display: inline-block;
+  border-right: 1px solid #373737;
+  box-shadow: 1px 0px 0 0 #282828;
+}
+header .header-wrapper nav ul li a {
+  margin: 10px;
+  text-decoration: none;
+  position: relative;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: white;
+}
+header .header-wrapper nav ul li a span {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: #a1ff9e;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+header .header-wrapper nav ul li a:hover {
+  color: #a1ff9e;
+}
+main {
+  background: url("../img/slider-0.png");
+  background-size: cover;
+}

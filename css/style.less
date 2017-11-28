@@ -1,0 +1,94 @@
+.arial {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	color: white;
+}
+.arial-span {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	color: @green;
+}
+
+@green: #a1ff9e;
+@grey: #282828;
+@red: #631a1a;
+@light-red: #bc2a2a;
+
+header {
+    height: 74px;
+    background: url("../img/header.png");
+    background-size: cover; 
+    line-height: 74px;    
+    .header-wrapper {
+    width: 960px;
+    margin: 0 auto;    
+    .logo {
+        float: left;
+        margin: 10px;
+    } 
+    .support {
+        float: right;
+        margin: 5px;         
+        background: url("../img/call-button.png");
+        // box-shadow: 1px 0px 0 0 @grey;
+        border: none;
+        .arial;
+        font-size: 14px;
+        background-size: cover;
+        padding: 5px;          
+        width: 103px;
+        height: 60px; 
+        img {
+            float: left;
+        }  
+        &:focus {            
+            outline:0;
+        } 
+        &:hover {
+            font-size: 16px;
+            box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 5px 0 rgba(0,0,0,0.19);
+        } 
+        &:active {
+            font-size: 16px;
+            box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 5px 0 rgba(0,0,0,0.19);            
+            transform: translateY(4px);
+          }
+    }  
+    nav {
+        float: right;   
+    ul li {
+        height: 74px;
+        display: inline-block; 
+        border-right: 1px solid #373737;
+        box-shadow: 1px 0px 0 0 @grey;
+        a {
+            margin: 10px;
+            text-decoration: none;
+            position: relative;
+            .arial;                      
+            span {
+                .arial-span;                
+                position: absolute;                
+                right: 0;
+                top: -50px;                
+                right: 0;
+            }
+            &:hover {
+                color: @green;
+            }
+        }       
+    }    
+    }    
+} 
+}
+
+main {
+    background: url("../img/slider-0.png");
+    background-size: cover;
+}
