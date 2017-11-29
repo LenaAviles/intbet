@@ -290,9 +290,10 @@ main .main-wrapper .register-pane {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 318px;
+  flex-wrap: wrap;
 }
 main .main-wrapper .register-pane .register-pane__box {
+  height: 318px;
   width: 232px;
   display: flex;
   flex-direction: column;
@@ -413,6 +414,7 @@ footer .logo-pane-wrap .logo-pane {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 footer nav {
   width: 100%;
@@ -426,6 +428,7 @@ footer nav .footer-nav-wrap {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 footer nav .footer-nav-wrap .footer-nav-col h2 {
   margin-top: 20px;

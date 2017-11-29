@@ -283,8 +283,9 @@ main {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            height: 318px;
-            .register-pane__box {
+            flex-wrap: wrap;            
+            .register-pane__box {                
+                height: 318px;
                 width: 232px;
                 display: flex;
                 flex-direction: column;
@@ -390,7 +391,8 @@ footer {
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;            
+            align-items: center; 
+            flex-wrap: wrap;           
         }
     }
     nav {
@@ -404,6 +406,7 @@ footer {
             justify-content: space-between;
             flex-direction: row;
             align-items: center;
+            flex-wrap: wrap;
             .footer-nav-col {
                 h2 {
                     margin-top: 20px;
