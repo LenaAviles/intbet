@@ -12,13 +12,34 @@
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	color: @green;
+	color: @light-green;
+}
+.arial-it {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 700;
+	color: white;
+}
+.arial-reg {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	color: white;
 }
 
-@green: #a1ff9e;
+@light-green: #a1ff9e;
+@green: lighten(@dark-green, 10%);
+@green_str: '#a1ff9e';
 @grey: #282828;
+@light-grey: #c4c4c4;
 @red: #631a1a;
 @light-red: #bc2a2a;
+@dark-green: #07904e;
+@dark-green_str: '#07904e';
 
 header {
     height: 74px;
@@ -86,9 +107,159 @@ header {
     }    
     }    
 } 
+hr {
+    border: none;
+    background-color: @green;
+    color: @dark-green;
+    height: 2px;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+}
 }
 
 main {
+    min-height: 833px;
+    min-width: 100%;
     background: url("../img/slider-0.png");
     background-size: cover;
-}
+    .main-wrapper {
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        .login-wrap {
+            position: relative;                 
+            width: 300px;                       
+            padding: 5px;            
+            h2 {              
+              .arial-it;
+              margin: 25px 0 0 25px;              
+            }
+            
+            .form {
+                background: rgba(0,0,0,0.5);
+                height: 200px;
+                border-radius: 5px;
+                padding: 5px;
+              input,
+              button {
+                margin-left: 5%;
+                width: 87%;
+                height: 40px;
+                border-radius: 5px;
+                outline: 0;
+                -moz-outline-style: none;
+              }
+              
+              input {                                
+                margin-top: 15px;
+                border: 1px solid #bbb;
+                padding: 0 0 0 10px;
+                font-size: 14px;
+                color: @light-grey;
+                text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+                transition: all 2s ease-in-out;
+                -webkit-transition: all 2s ease-in-out;
+                -moz-transition: all 2s ease-in-out;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                -moz-box-shadow:inset 0 0 5px 5px #E6E6E6;
+                -webkit-box-shadow:inset 0 0 5px 5px #E6E6E6;
+                box-shadow:inset 0 0 5px 5px #E6E6E6;
+                clear: right;
+                            
+                &:focus {
+                  border: 1px solid @dark-green;
+                }
+              }
+              
+              
+              a {                  
+                .arial-reg;
+                text-decoration: none;
+                p {
+                    margin: 3% 5%;
+              }
+            }
+              
+              button {  
+                margin-right: 3%;              
+                border:none;
+                color: white;
+                .arial;
+                font-weight: 700;
+                cursor: pointer;
+                // transition: box-shadow .4s ease;
+                
+                &:hover {
+                  box-shadow: 1px 1px 5px #000;  
+                }
+                  
+                &:active {
+                    box-shadow: 1px 1px 7px #000;  
+                }
+                
+              }
+              .btn_red {
+                width: 120px;
+                float: right;
+                background: #e74c3c;
+                background: -moz-linear-gradient(top, red 0%, @light-red 100%);
+                background: -webkit-linear-gradient(top,  red 0%, @light-red 100%);
+                background: -o-linear-gradient(top,  red 0%, @light-red 100%);
+                background: -ms-linear-gradient(top,  red 0%, @light-red 100%);
+                background: linear-gradient(top,  red 0%, @light-red 100%);                
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee79a', endColorstr='#fec151',GradientType=0 );
+                
+                &:hover {
+                    background: -moz-linear-gradient(top,  @light-red 0%, red 100%);
+                    background: -webkit-linear-gradient(top,  @light-red 0%, red 100%);
+                    background: -o-linear-gradient(top,  @light-red 0%, red 100%);
+                    background: -ms-linear-gradient(top,  @light-red 0%, red 100%);
+                    background: linear-gradient(top,  @light-red 0%, red 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee79a', endColorstr='#fec151',GradientType=0 );
+                }
+            }              
+            }
+
+            .form_register {
+                margin-top: 10px;
+                height: 90px;
+                p {
+                    .arial;
+                    font-style: italic;
+                    text-align: center;
+                    margin: 3%;
+                }
+                .btn_register {                    
+                    background: @dark-green; 
+                    background: -moz-linear-gradient(top, @green 0%, @dark-green 100%);
+                    background: -webkit-linear-gradient(top,  @green 0%, @dark-green 100%);
+                    background: -o-linear-gradient(top,  @green 0%, @dark-green 100%);
+                    background: -ms-linear-gradient(top,  @green 0%, @dark-green 100%);
+                    background: linear-gradient(top,  @green 0%, @dark-green 100%);                
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@green_str, endColorstr=@dark-green_str,GradientType=0 );                   
+                    &:hover {
+                        background: -moz-linear-gradient(top, @dark-green 0%, @green 100%);
+                        background: -webkit-linear-gradient(top,  @dark-green 0%, @green 100%);
+                        background: -o-linear-gradient(top,  @dark-green 0%, @green 100%);
+                        background: -ms-linear-gradient(top,  @dark-green 0%, @green 100%);
+                        background: linear-gradient(top,  @dark-green 0%, @green 100%);                
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@dark-green_str, endColorstr=@green_str,GradientType=0 );                   
+                    }
+                }   
+            }
+                       
+          }
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 320px;
+            color: white;
+            font-size: 36px;
+        }  
+        }
+    }
+

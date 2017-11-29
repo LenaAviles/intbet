@@ -14,6 +14,22 @@
   font-weight: 500;
   color: #a1ff9e;
 }
+.arial-it {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  color: white;
+}
+.arial-reg {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: white;
+}
 header {
   height: 74px;
   background: url("../img/header.png");
@@ -92,9 +108,164 @@ header .header-wrapper nav ul li a span {
   right: 0;
 }
 header .header-wrapper nav ul li a:hover {
-  color: #a1ff9e;
+  color: #09c168;
+}
+header hr {
+  border: none;
+  background-color: #09c168;
+  color: #07904e;
+  height: 2px;
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 100%;
 }
 main {
+  min-height: 833px;
+  min-width: 100%;
   background: url("../img/slider-0.png");
   background-size: cover;
+}
+main .main-wrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+main .main-wrapper .login-wrap {
+  position: relative;
+  width: 300px;
+  padding: 5px;
+}
+main .main-wrapper .login-wrap h2 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  color: white;
+  margin: 25px 0 0 25px;
+}
+main .main-wrapper .login-wrap .form {
+  background: rgba(0, 0, 0, 0.5);
+  height: 200px;
+  border-radius: 5px;
+  padding: 5px;
+}
+main .main-wrapper .login-wrap .form input,
+main .main-wrapper .login-wrap .form button {
+  margin-left: 5%;
+  width: 87%;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  -moz-outline-style: none;
+}
+main .main-wrapper .login-wrap .form input {
+  margin-top: 15px;
+  border: 1px solid #bbb;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+  color: #c4c4c4;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.5);
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 5px 5px #E6E6E6;
+  -webkit-box-shadow: inset 0 0 5px 5px #E6E6E6;
+  box-shadow: inset 0 0 5px 5px #E6E6E6;
+  clear: right;
+}
+main .main-wrapper .login-wrap .form input:focus {
+  border: 1px solid #07904e;
+}
+main .main-wrapper .login-wrap .form a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+main .main-wrapper .login-wrap .form a p {
+  margin: 3% 5%;
+}
+main .main-wrapper .login-wrap .form button {
+  margin-right: 3%;
+  border: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+main .main-wrapper .login-wrap .form button:hover {
+  box-shadow: 1px 1px 5px #000;
+}
+main .main-wrapper .login-wrap .form button:active {
+  box-shadow: 1px 1px 7px #000;
+}
+main .main-wrapper .login-wrap .form .btn_red {
+  width: 120px;
+  float: right;
+  background: #e74c3c;
+  background: -moz-linear-gradient(top, red 0%, #bc2a2a 100%);
+  background: -webkit-linear-gradient(top, red 0%, #bc2a2a 100%);
+  background: -o-linear-gradient(top, red 0%, #bc2a2a 100%);
+  background: -ms-linear-gradient(top, red 0%, #bc2a2a 100%);
+  background: linear-gradient(top, red 0%, #bc2a2a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fee79a', endColorstr='#fec151', GradientType=0);
+}
+main .main-wrapper .login-wrap .form .btn_red:hover {
+  background: -moz-linear-gradient(top, #bc2a2a 0%, red 100%);
+  background: -webkit-linear-gradient(top, #bc2a2a 0%, red 100%);
+  background: -o-linear-gradient(top, #bc2a2a 0%, red 100%);
+  background: -ms-linear-gradient(top, #bc2a2a 0%, red 100%);
+  background: linear-gradient(top, #bc2a2a 0%, red 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fee79a', endColorstr='#fec151', GradientType=0);
+}
+main .main-wrapper .login-wrap .form_register {
+  margin-top: 10px;
+  height: 90px;
+}
+main .main-wrapper .login-wrap .form_register p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin: 3%;
+}
+main .main-wrapper .login-wrap .form_register .btn_register {
+  background: #07904e;
+  background: -moz-linear-gradient(top, #09c168 0%, #07904e 100%);
+  background: -webkit-linear-gradient(top, #09c168 0%, #07904e 100%);
+  background: -o-linear-gradient(top, #09c168 0%, #07904e 100%);
+  background: -ms-linear-gradient(top, #09c168 0%, #07904e 100%);
+  background: linear-gradient(top, #09c168 0%, #07904e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1ff9e', endColorstr='#07904e', GradientType=0);
+}
+main .main-wrapper .login-wrap .form_register .btn_register:hover {
+  background: -moz-linear-gradient(top, #07904e 0%, #09c168 100%);
+  background: -webkit-linear-gradient(top, #07904e 0%, #09c168 100%);
+  background: -o-linear-gradient(top, #07904e 0%, #09c168 100%);
+  background: -ms-linear-gradient(top, #07904e 0%, #09c168 100%);
+  background: linear-gradient(top, #07904e 0%, #09c168 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07904e', endColorstr='#a1ff9e', GradientType=0);
+}
+main .main-wrapper h1 {
+  position: absolute;
+  top: 20px;
+  left: 320px;
+  color: white;
+  font-size: 36px;
 }

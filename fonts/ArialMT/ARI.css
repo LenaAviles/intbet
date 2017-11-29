@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ARI';
+    src: url('fonts/ARI.eot');
+    src: url('fonts/ARI.eot') format('embedded-opentype'),
+         url('fonts/ARI.woff2') format('woff2'),
+         url('fonts/ARI.woff') format('woff'),
+         url('fonts/ARI.ttf') format('truetype'),
+         url('fonts/ARI.svg#ARI') format('svg');
+}
