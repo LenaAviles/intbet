@@ -1,5 +1,5 @@
 .arial {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "arialMT", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 18px;
 	font-style: normal;
 	font-variant: normal;
@@ -7,7 +7,7 @@
 	color: white;
 }
 .arial-span {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "arialMT", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -15,7 +15,7 @@
 	color: @light-green;
 }
 .arial-it {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "arialMT", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 24px;
 	font-style: italic;
 	font-variant: normal;
@@ -23,8 +23,17 @@
 	color: white;
 }
 .arial-reg {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "arialMT", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	color: white;
+}
+
+.pfbeausanspro-reg {
+    font-family: "pfbeausanspro-reg", sans-serif;
+	font-size: 36px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
@@ -35,11 +44,17 @@
 @green: lighten(@dark-green, 10%);
 @green_str: '#a1ff9e';
 @grey: #282828;
+@dark-grey: #2c2c2c;
 @light-grey: #c4c4c4;
+@grey-footer: #7c7c7c;
 @red: #631a1a;
 @light-red: #bc2a2a;
 @dark-green: #07904e;
 @dark-green_str: '#07904e';
+@orange: #ab6126;
+@blue: #4370fe;
+@green-casino: #91ab2e;
+@red-poker: #e04124;
 
 header {
     height: 74px;
@@ -72,13 +87,13 @@ header {
             outline:0;
         } 
         &:hover {
-            font-size: 16px;
+            font-size: 15px;
             box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 5px 0 rgba(0,0,0,0.19);
         } 
         &:active {
-            font-size: 16px;
+            font-size: 15px;
             box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 5px 0 rgba(0,0,0,0.19);            
-            transform: translateY(4px);
+            transform: translateY(2px);
           }
     }  
     nav {
@@ -138,8 +153,9 @@ main {
             }
             
             .form {
+                margin-top: 20px;
                 background: rgba(0,0,0,0.5);
-                height: 200px;
+                height: 235px;
                 border-radius: 5px;
                 padding: 5px;
               input,
@@ -257,9 +273,170 @@ main {
             position: absolute;
             top: 20px;
             left: 320px;
-            color: white;
-            font-size: 36px;
-        }  
+            .pfbeausanspro-reg;
+            span {
+                font-weight: 900;
+            }
+        } 
+        .register-pane {
+            margin-top: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 318px;
+            .register-pane__box {
+                width: 232px;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(255,255,255,0.7);
+                box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.7);
+                .box-name {
+                    position: relative;
+                    height: 42px;
+                    width: 100%;
+                    h2 {
+                        margin: 10px;
+                        .arial;
+                        font-size: 22px;
+                    }
+                    img {
+                        position: absolute;
+                        right: 0;
+                        top: -10px;
+                    }
+                }
+                .box-bonus {
+                    margin: 15px 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    span {
+                        .arial;
+                        font-size: 40px;
+                        font-weight: 700;                        
+                        color: @dark-grey;
+                    }
+                    p {
+                        .arial;
+                        text-align: center;
+                        color: @dark-grey;
+                        span { font-weight: 700; }
+                    }
+                }
+                p {
+                    .arial-reg;
+                    color: @dark-grey;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+                button { 
+                    margin-left: 5%;
+                    width: 87%;
+                    height: 35px;
+                    border-radius: 5px;
+                    outline: 0;
+                    -moz-outline-style: none; 
+                    margin-right: 3%;              
+                    border:none;
+                    color: white;
+                    .arial;                    
+                    cursor: pointer;
+                    // transition: box-shadow .4s ease;
+                    
+                    &:hover {
+                      box-shadow: 1px 1px 5px #000;
+                      background: #000;  
+                    }
+                      
+                    &:active {
+                        box-shadow: 1px 1px 7px #000;  
+                    }
+                    
+                  }                  
+            }
+            .box_bet {
+                .box-name, button {
+                    background-color: @orange;
+                }                 
+            }
+            .box_live-bet {
+                .box-name, button {
+                    background-color: @blue;
+                }                 
+            }
+            .box_casino {
+                .box-name, button {
+                    background-color: @green-casino;
+                }                 
+            }
+            .box_poker {
+                .box-name, button {
+                    background-color: @red-poker;
+                }                 
+            }
+        } 
         }
     }
 
+footer {    
+    .logo-pane-wrap {
+        padding-top: 15px;
+        width: 100%;
+        height: 60px;
+        background: @grey;                
+        .logo-pane {            
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;            
+        }
+    }
+    nav {
+        width: 100%;
+        background: @dark-grey;
+        height: 180px;
+        .footer-nav-wrap {
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            .footer-nav-col {
+                h2 {
+                    margin-top: 20px;
+                    .arial;
+                    color: @grey-footer;                    
+                    font-size: 16px;
+                }
+                hr {
+                    border: none;
+                    background-color: @grey-footer;
+                    color: @grey-footer;
+                    opacity: 0.2;
+                    height: 1px;
+                }
+                li {
+                    text-align: center;
+                    margin-bottom: 10px;
+                    a {
+                        text-decoration: none;
+                        .arial-reg;
+                        color: @grey-footer;
+                    }
+                }
+            }
+        }
+        
+    }
+    p {
+        background: @dark-grey;
+        text-align: center;
+        .arial;
+        font-size: 10px;
+        color: @grey-footer;
+        padding-bottom: 5px;
+    }
+}

@@ -1,10 +1,22 @@
 @font-face {
-    font-family: 'ARI';
-    src: url('fonts/ARI.eot');
-    src: url('fonts/ARI.eot') format('embedded-opentype'),
-         url('fonts/ARI.woff2') format('woff2'),
-         url('fonts/ARI.woff') format('woff'),
-         url('fonts/ARI.ttf') format('truetype'),
-         url('fonts/ARI.svg#ARI') format('svg');
+    font-family: 'arialMT';
+    src: url('../fonts/ArialMT/arialMT.eot');
+    src: url('../fonts/ArialMT/arialMT.eot') format('embedded-opentype'),
+         url('../fonts/ArialMT/arialMT.woff2') format('woff2'),
+         url('../fonts/ArialMT/arialMT.woff') format('woff'),
+         url('../fonts/ArialMT/arialMT.ttf') format('truetype'),
+         url('../fonts/ArialMT/arialMT.svg#arialMT') format('svg');
 }
+
+@font-face {
+    font-family: 'pfbeausanspro-reg';
+    src: url('../fonts/pfbeausanspro-reg/pfbeausanspro-reg.eot');
+    src: url('../fonts/pfbeausanspro-reg/pfbeausanspro-reg.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-reg/pfbeausanspro-reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbeausanspro-reg/PFBeauSansPro-Regular.woff') format('woff'),
+         url('../fonts/pfbeausanspro-reg/PFBeauSansPro-Regular.ttf') format('truetype'),
+         url('../fonts/pfbeausanspro-reg/PFBeauSansPro-Regular.svg#PFBeauSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 
